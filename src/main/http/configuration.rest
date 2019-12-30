@@ -1,0 +1,33 @@
+GET http://localhost:8080/configuration
+
+###
+%%%
+
+# Duration: 206 ms
+# URL: http://localhost:8080/configuration
+
+# HTTP/1.1 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Tue, 31 Dec 2019 15:03:17 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+{
+  "credentials": {
+    "username": "username",
+    "password": "password"
+  },
+  "services": {
+    "payment": {
+      "url": "http://localhost:9090",
+      "frequency": 1800
+    }
+  },
+  "storage": {
+    "clearAfterDays": 25
+  }
+}
+
+###

@@ -1,0 +1,13 @@
+app:
+  port: 9090
+  services:
+    payment:
+      url: http://localhost:9090
+      frequency: 1800
+
+  credentials:
+    username: ${APP_USERNAME}
+    password: ${APP_PASSWORD}
+
+  storage:
+    clear_after_days: 10
