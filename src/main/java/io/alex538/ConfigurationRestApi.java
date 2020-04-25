@@ -1,6 +1,6 @@
-package io.aleksey512;
+package io.alex538;
 
-import io.aleksey512.cfg.GlobalConfiguration;
+import io.alex538.cfg.GlobalConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

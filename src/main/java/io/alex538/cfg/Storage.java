@@ -1,4 +1,4 @@
-package io.aleksey512.cfg;
+package io.alex538.cfg;
 
 import lombok.Getter;
 import lombok.Setter;
