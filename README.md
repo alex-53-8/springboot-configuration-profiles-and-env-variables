@@ -1,7 +1,7 @@
 # SpringBoot configuration aspects
 
 ### Disclaimer
-This article doesn't not cover correctness of defining configuration keys in a file, it's just an example how 
+This article does not cover correctness of defining configuration keys in a file, it's just an example how 
 to use overriding for customizing configuration. Therefore my examples contain users' names and password in configuration files, 
 it's just an example :) Personally I don't store credentials in configuration files and supply credentials via environmental variables.
 
@@ -45,7 +45,7 @@ where `PROFILE_NAME` is a profile's name. All configuration keys that are stored
 profile only and will appear in an application once a developer applies a profile's name during application's startup. 
 
 ## How configuration keys' map is created
-During startup a configuration keys' map is created. The map is filled with the keys and value from configuration files. 
+During startup a configuration keys' map is created. The map is filled with the keys and values from configuration files. 
 Not all configuration files are read - only those files are read that match active profiles and `default` one.
 If the same configuration keys are exist then the value of such key is overridden by the latest specified profile. 
 There is a simple order of reading configuration files: `default` (`application.yml`) is read every time first and then
